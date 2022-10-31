@@ -118,6 +118,7 @@ namespace Лаба4
             Bitmap bmp = new Bitmap(image, width, height);
             pictureBox1.Image = pictureBox1.RotateFlip(RotateFlipType.RotateNoneFlipY);*/
         }
+        //bpvtytybz 
     }
 
    
