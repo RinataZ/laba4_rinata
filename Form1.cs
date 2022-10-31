@@ -112,11 +112,11 @@ namespace Лаба4
        
         private void button2_MouseDown(object sender, MouseEventArgs e)
         {
-            Graphics gfx = pictureBox1.CreateGraphics();
+           /* Graphics gfx = pictureBox1.CreateGraphics();
             int width = pictureBox1.Width;
             do height = pictureBox1.Height;
             Bitmap bmp = new Bitmap(image, width, height);
-            pictureBox1.Image = pictureBox1.RotateFlip(RotateFlipType.RotateNoneFlipY);
+            pictureBox1.Image = pictureBox1.RotateFlip(RotateFlipType.RotateNoneFlipY);*/
         }
     }
 
