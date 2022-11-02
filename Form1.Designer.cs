@@ -31,13 +31,13 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ref_down = new System.Windows.Forms.Button();
+            this.ref_up = new System.Windows.Forms.Button();
+            this.btn_move_y_d = new System.Windows.Forms.Button();
+            this.btn_move_y_u = new System.Windows.Forms.Button();
+            this.btn_move_x_l = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_move_x_r = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,77 +52,73 @@
             // 
             // button8
             // 
-            this.button8.Image = global::Лаба4.Properties.Resources.выворо_право;
             this.button8.Location = new System.Drawing.Point(737, 519);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(61, 56);
+            this.button8.Size = new System.Drawing.Size(87, 56);
             this.button8.TabIndex = 7;
+            this.button8.Text = "button_8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
-            this.button7.Image = global::Лаба4.Properties.Resources.выворот_лево;
             this.button7.Location = new System.Drawing.Point(737, 453);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(61, 60);
+            this.button7.Size = new System.Drawing.Size(87, 60);
             this.button7.TabIndex = 6;
+            this.button7.Text = "button_7";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button6
+            // ref_down
             // 
-            this.button6.Image = global::Лаба4.Properties.Resources.внизз;
-            this.button6.Location = new System.Drawing.Point(737, 373);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(61, 74);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
+            this.ref_down.Image = global::Лаба4.Properties.Resources.внизз;
+            this.ref_down.Location = new System.Drawing.Point(737, 373);
+            this.ref_down.Name = "ref_down";
+            this.ref_down.Size = new System.Drawing.Size(61, 74);
+            this.ref_down.TabIndex = 5;
+            this.ref_down.UseVisualStyleBackColor = true;
+            this.ref_down.Click += new System.EventHandler(this.ref_down_Click);
             // 
-            // button5
+            // ref_up
             // 
-            this.button5.Image = global::Лаба4.Properties.Resources.вверх;
-            this.button5.Location = new System.Drawing.Point(737, 296);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(61, 71);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
+            this.ref_up.Image = global::Лаба4.Properties.Resources.вверх;
+            this.ref_up.Location = new System.Drawing.Point(737, 296);
+            this.ref_up.Name = "ref_up";
+            this.ref_up.Size = new System.Drawing.Size(61, 71);
+            this.ref_up.TabIndex = 4;
+            this.ref_up.UseVisualStyleBackColor = true;
+            this.ref_up.Click += new System.EventHandler(this.ref_up_Click);
             // 
-            // button4
+            // btn_move_y_d
             // 
-            this.button4.Image = global::Лаба4.Properties.Resources.вниз;
-            this.button4.Location = new System.Drawing.Point(737, 232);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(61, 58);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_move_y_d.Image = global::Лаба4.Properties.Resources.вниз;
+            this.btn_move_y_d.Location = new System.Drawing.Point(737, 232);
+            this.btn_move_y_d.Name = "btn_move_y_d";
+            this.btn_move_y_d.Size = new System.Drawing.Size(61, 58);
+            this.btn_move_y_d.TabIndex = 3;
+            this.btn_move_y_d.UseVisualStyleBackColor = true;
+            this.btn_move_y_d.Click += new System.EventHandler(this.btn_down);
             // 
-            // button3
+            // btn_move_y_u
             // 
-            this.button3.Image = global::Лаба4.Properties.Resources.верх;
-            this.button3.Location = new System.Drawing.Point(737, 164);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(61, 62);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_move_y_u.Image = global::Лаба4.Properties.Resources.верх;
+            this.btn_move_y_u.Location = new System.Drawing.Point(737, 164);
+            this.btn_move_y_u.Name = "btn_move_y_u";
+            this.btn_move_y_u.Size = new System.Drawing.Size(61, 62);
+            this.btn_move_y_u.TabIndex = 2;
+            this.btn_move_y_u.UseVisualStyleBackColor = true;
+            this.btn_move_y_u.Click += new System.EventHandler(this.btn_up);
             // 
-            // button2
+            // btn_move_x_l
             // 
-            this.button2.Image = global::Лаба4.Properties.Resources.лево;
-            this.button2.Location = new System.Drawing.Point(737, 97);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(61, 61);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button2_MouseDown);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(737, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Нарисовать график";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_move_x_l.Image = global::Лаба4.Properties.Resources.лево;
+            this.btn_move_x_l.Location = new System.Drawing.Point(737, 97);
+            this.btn_move_x_l.Name = "btn_move_x_l";
+            this.btn_move_x_l.Size = new System.Drawing.Size(61, 61);
+            this.btn_move_x_l.TabIndex = 1;
+            this.btn_move_x_l.UseVisualStyleBackColor = true;
+            this.btn_move_x_l.Click += new System.EventHandler(this.btn_left);
             // 
             // pictureBox1
             // 
@@ -133,21 +129,31 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
+            // btn_move_x_r
+            // 
+            this.btn_move_x_r.Image = global::Лаба4.Properties.Resources.e97b5050a25455d87c59005fc706e21;
+            this.btn_move_x_r.Location = new System.Drawing.Point(737, 30);
+            this.btn_move_x_r.Name = "btn_move_x_r";
+            this.btn_move_x_r.Size = new System.Drawing.Size(61, 61);
+            this.btn_move_x_r.TabIndex = 10;
+            this.btn_move_x_r.UseVisualStyleBackColor = true;
+            this.btn_move_x_r.Click += new System.EventHandler(this.btn_right);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 650);
+            this.Controls.Add(this.btn_move_x_r);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ref_down);
+            this.Controls.Add(this.ref_up);
+            this.Controls.Add(this.btn_move_y_d);
+            this.Controls.Add(this.btn_move_y_u);
+            this.Controls.Add(this.btn_move_x_l);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -157,17 +163,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_move_x_l;
+        private System.Windows.Forms.Button btn_move_y_u;
+        private System.Windows.Forms.Button btn_move_y_d;
+        private System.Windows.Forms.Button ref_up;
+        private System.Windows.Forms.Button ref_down;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_move_x_r;
     }
 }
 
